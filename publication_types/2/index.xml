@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 on Nan Xue&#39;s Homepage</title>
-    <link>https://example.com/publication_types/2/</link>
+    <link>/publication_types/2/</link>
     <description>Recent content in 2 on Nan Xue&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,19 +11,19 @@
     
     <item>
       <title>Anisotropic-Scale Junction Detection and Matching for Indoor Images</title>
-      <link>https://example.com/publication/2017-tip-asj/</link>
+      <link>/publication/2017-tip-asj/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/publication/2017-tip-asj/</guid>
+      <guid>/publication/2017-tip-asj/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Anisotropic diffusion on complex tensor fields for PolSAR image filtering</title>
-      <link>https://example.com/publication/2015-jwhu-adoct/</link>
+      <link>/publication/2015-jwhu-adoct/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/publication/2015-jwhu-adoct/</guid>
+      <guid>/publication/2015-jwhu-adoct/</guid>
       <description></description>
     </item>
     
