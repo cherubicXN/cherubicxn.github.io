@@ -2,55 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Nan Xue&#39;s Homepage</title>
-    <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/</link>
+    <link>https://example.com/publication/</link>
     <description>Recent content in Publications on Nan Xue&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/cherubicXN/cherubicxn.github.io/master/publication/" rel="self" type="application/rss+xml" />
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Anisotropic-Scale Junction Detection and Matching for Indoor Images</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2017-tip-asj/</link>
+      <link>https://example.com/publication/2017-tip-asj/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2017-tip-asj/</guid>
+      <guid>https://example.com/publication/2017-tip-asj/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Anisotropic diffusion on complex tensor fields for PolSAR image filtering</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2015-jwhu-adoct/</link>
+      <link>https://example.com/publication/2015-jwhu-adoct/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2015-jwhu-adoct/</guid>
+      <guid>https://example.com/publication/2015-jwhu-adoct/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Finding edges of buildings via a junction process in high-resolution remotely sensed images</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2015-igarss-xuxxz/</link>
+      <link>https://example.com/publication/2015-igarss-xuxxz/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2015-igarss-xuxxz/</guid>
+      <guid>https://example.com/publication/2015-igarss-xuxxz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Anisotropic diffusion on complex tensor fields for PolSAR image filtering</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2014-igarss-xuexz/</link>
+      <link>https://example.com/publication/2014-igarss-xuexz/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2014-igarss-xuexz/</guid>
+      <guid>https://example.com/publication/2014-igarss-xuexz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SAR image segmentation via non-local active contours</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2014-igarss-liuxyx/</link>
+      <link>https://example.com/publication/2014-igarss-liuxyx/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/publication/2014-igarss-liuxyx/</guid>
+      <guid>https://example.com/publication/2014-igarss-liuxyx/</guid>
       <description></description>
     </item>
     

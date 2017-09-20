@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Nan Xue&#39;s Homepage</title>
-    <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/</link>
+    <link>https://example.com/tags/</link>
     <description>Recent content in Tags on Nan Xue&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/cherubicXN/cherubicxn.github.io/master/tags/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/academic/</link>
+      <link>https://example.com/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/academic/</guid>
+      <guid>https://example.com/tags/academic/</guid>
       <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/deep-learning/</link>
+      <link>https://example.com/tags/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/deep-learning/</guid>
+      <guid>https://example.com/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/demo/</link>
+      <link>https://example.com/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/demo/</guid>
+      <guid>https://example.com/tags/demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/hugo/</link>
+      <link>https://example.com/tags/hugo/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/hugo/</guid>
+      <guid>https://example.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jekyll</title>
-      <link>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/jekyll/</link>
+      <link>https://example.com/tags/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0800</pubDate>
       
-      <guid>https://raw.githubusercontent.com/cherubicXN/cherubicxn.github.io/master/tags/jekyll/</guid>
+      <guid>https://example.com/tags/jekyll/</guid>
       <description></description>
     </item>
     
