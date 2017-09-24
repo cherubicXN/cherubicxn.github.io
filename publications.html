@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Publications"
+description: "of Nan Xue"
+---
+
+<pre id="bibtex" style="display:none;">
+      {% include_relative _bibtex/publications.bib %}
+</pre>
+
+<script src="{{ "/js/bib-list.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet"  href="{{ "/css/bib-publication-list.css" | prepend: site.baseurl }}">
+
+
+<noscript>
+<!-- bibtex source hidden by default, show it if JS disabled -->
+<style>
+      #bibtex { display: block;}
+</style>
+</noscript>
+
+<table id="pubTable" class="display"></table>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        bibtexify("#bibtex", "pubTable", {'visualization': 0});
+    });
+</script>

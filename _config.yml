@@ -1,0 +1,30 @@
+title: Homepage of Nan Xue
+author: Nan Xue
+email: xuenan@whu.edu.cn
+description: Homepage of Nan Xue
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cherubicxn.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  cherubicXN
+
+#permalink: blog/:year/:month/:title
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+name: Nan Xue
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
