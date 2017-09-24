@@ -2,7 +2,7 @@ title: Homepage of Nan Xue
 author: Nan Xue
 email: xuenan@whu.edu.cn
 description: Homepage of Nan Xue
-baseurl: "https://cherubicxn.github.io/" # the subpath of your site, e.g. /blog
+baseurl: "https://cherubicxn.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  cherubicXN
