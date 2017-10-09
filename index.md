@@ -4,7 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
 title: "Welcome"
-description: "Homepage of Nan Xue"
+description: "Homepage of Nan Xue (薛楠)"
 header-img: "img/cover.jpg"
 ---
 
