@@ -8,7 +8,7 @@ description: "Homepage of Nan Xue (薛楠)"
 header-img: "img/cover.jpg"
 ---
 
-About Me
+About Me ([Full CV](img/cv.pdf))
 ========================
 I am currently a PhD candidate in Wuhan University majoring 3D computer vision under the supervision with Prof. Liangpei Zhang and [Gui-Song Xia](http://captain.whu.edu.cn/xia_En.html) in the [CAPTAIN group](http://captain.whu.edu.cn) of the [LIESMARS](http://www.lmars.whu.edu.cn/en/) (State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing) of [Wuhan University](http://en.whu.edu.cn). Before starting my PhD, I received a Bachelor degree in Computational Mathematics at Wuhan University in Jun. 2014. From Sep. 2014 to Jun. 2016, I have worked as a master student in LIESMARS with Prof. Gui-Song Xia on structure-from-motion (SfM) and visual correspondence. Currently, I’m continuing my studying toward a Ph.D degree in 3D reconstruction.
 
