@@ -14,7 +14,7 @@
 
     <title>Publications - Homepage of Nan Xue</title>
 
-    <link rel="canonical" href="https://cherubicxn.github.io/publications/">
+    <link rel="canonical" href="http://localhost:4000/publications/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -33,7 +33,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- XML FEED -->
-    <link type="application/atom+xml" rel="alternate" href="https://cherubicxn.github.io/feed.xml" title="Homepage of Nan Xue" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Homepage of Nan Xue" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -100,7 +100,9 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-			<pre id="bibtex" style="display:none;">
+			<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2FcherubicXN%2Fcherubicxn.github.io%2Fmaster%2F_bibtex%2Fpublications.bib&authorFirst=1&fullnames=1&jsonp=1"></script>
+<!--
+<pre id="bibtex" style="display:none;">
       @inproceedings{2018-ECCV,
     title = {Adaptively Transforming Graph Matching},
     author = {Fudong Wang and <strong>Nan Xue</strong> and Yipeng Zhang and Xiang bai and Gui-Song Xia},
@@ -109,13 +111,16 @@
     year = "2018",
 }
 
-@Article{2017-Xue-TIP,
+@Article{2018-Xue-TIP,
     title = "Anisotropic-Scale Junction Detection and
              Matching for Indoor Images",
     author = "<strong>Nan Xue</strong> and Gui-Song Xia and Xiang Bai and Liangpei Zhang and Weiming Shen",
     institution = "Arxiv",
     journal = "IEEE Transactions on Image Processing",
-    year = "2017",
+    year = "2018",
+    volume= "27",
+    issue = "1",
+    pages = "79--91",
     doi = {10.1109/TIP.2017.2754945},
     url = {https://arxiv.org/abs/1703.05630},
     project = {https://github.com/cherubicXN/anisotropic-scale-junction-detector}
@@ -159,7 +164,9 @@
 <link rel="stylesheet"  href="/css/bib-publication-list.css">
 
 <noscript>
+-->
 <!-- bibtex source hidden by default, show it if JS disabled -->
+<!--
 <style>
       #bibtex { display: block;}
 </style>
@@ -171,7 +178,9 @@
     $(document).ready(function() {
         bibtexify("#bibtex", "pubTable", {'visualization': 0});
     });
+    
 </script>
+-->
 		</div>
 	</div>
 </div>
@@ -179,6 +188,8 @@
 <hr>
 
     <!-- Footer -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 <footer>
     <div class="container">
         <div class="row">
@@ -200,7 +211,7 @@
                         <a href="https://github.com/cherubicXN">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
@@ -210,7 +221,7 @@
                         <a href="https://scholar.google.com/citations?user=CKTrWqYAAAAJ&hl=en">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+                                <i class="fab fa-google fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
