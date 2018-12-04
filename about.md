@@ -15,8 +15,11 @@ header-img: "img/cover.jpg"
    - B.Sc, Computational Mathematics, Wuhan University, 2010 ~ 2014
       
 ## Honors and Awards
-- Second Prize Scholarship for Graduate Students (top 10%), Wuhan University, 2016
-- Second Prize Scholarship for Graduate Students (top 10%), Wuhan University, 2015
+- Second Prize Scholarship of Academic Innovation Award, Wuhan University, 2018
+- Second Prize Scholarship for Graduate Students, Wuhan University, 2018
+- Second Prize Scholarship for Graduate Students, Wuhan University, 2016
+- Second Prize Scholarship for Graduate Students, Wuhan University, 2016
+- Second Prize Scholarship for Graduate Students, Wuhan University, 2015
 - Scholarship for Excellent Freshman (top 5%), Wuhan University, 2014
 - Second Prize Scholarship (top 10%), Wuhan University, 2013
 - Meritorious Winner for Mathematical Contest in Modeling, American Consortium for Mathematics and Its Applications, 2012
