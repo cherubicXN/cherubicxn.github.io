@@ -12,7 +12,8 @@ I am a PhD candidate in Wuhan University majoring 3D computer vision under the s
 
  <!-- Before starting my PhD, I received a Bachelor degree in Computational Mathematics at Wuhan University in Jun. 2014. From Sep. 2014 to Jun. 2016, I have worked as a master student in LIESMARS with Prof. Gui-Song Xia on structure-from-motion (SfM) and visual correspondence. Currently, I’m continuing my studying toward a Ph.D degree in 3D reconstruction. -->
 
-# Recent News
+# Recent News.
+- 2018.12: I received the Second Prize of Wuhan University Academic Innovation Award.
 - 2018.11: One paper about infrared image matching is accepted by Pattern Recognition Letter.
 - 2018.10: I am being supported by CSC to work with Prof. [Tianfu Wu](http://www4.ncsu.edu/~twu19/) at [NC State University](https://www.ncsu.edu/).
 - 2018.07: One paper about graph matching is accepted by ECCV 2018.
