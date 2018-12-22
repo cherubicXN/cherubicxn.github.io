@@ -1,31 +1,23 @@
 ---
 layout: default
 ---
+<div class="post">
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{{ page.header-img }}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <hr class="small">
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+  <header class="post-header">
+    <h2><strong>{{page.title}}</strong></h2>
+    <h5 class="post-description">{{ page.description }}</h5>
+  </header>
 
+  <article class="post-content {{page.title}} clearfix">
+    {{ content }}
+  </article>
 
+  {% if page.news %}
+    {% include news.html %}
+  {% endif %}
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-			{{ content }}
-		</div>
-	</div>
+  {% if page.social %}
+    {% include social.html %}
+  {% endif %}
+
 </div>
-
-<hr>
