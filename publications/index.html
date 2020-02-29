@@ -78,7 +78,9 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="post">
+        <script src="/assets/js/main.js"></script>
+
+<div class="post">
 
   <header class="post-header">
     <!-- <h2><strong>Publications</strong></h2> -->
@@ -86,12 +88,9 @@
       <a href="" id="select1" onclick="showall(1); return false;">show all by date</a>)
     </h2>
     <h5 class="post-description"></h5>
-  </header>
+  </header>  
 
-  <bibtex src="/assets/bibfiles/papers.bib"></bibtex>
-  
-
-  <div id="pubs">12321</div>
+  <div id="pubs"></div>
   <script id="pubs_all" language="text"> <ol class="bibliography"><li>
 
 <div id="2020-HAWP-CVPR">
@@ -2248,18 +2247,8 @@
 </div>
 </li></ol> </script>
 
+ 
   <script>
-
-  function showall(istrue) {
-
-    if (istrue === 1) {
-      document.getElementById("pubs").innerHTML = document.getElementById('pubs_all').innerHTML
-    }
-    else{
-      document.getElementById("pubs").innerHTML = document.getElementById('pubs_sel').innerHTML
-    }
-  }
-
   showall(0)
   </script>
 </div>
