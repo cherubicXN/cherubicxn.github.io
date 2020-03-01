@@ -44,21 +44,13 @@
       <div class="trigger">
         <!-- About -->
         <a class="page-link" href="/">Home</a>
-
+        <a class="page-link" href="#publications">Publications</a>
         <!-- Pages -->
         
           
-            <a class="page-link" href="/about/">About Me</a>
-          
         
           
         
-          
-        
-          
-        
-          
-            <a class="page-link" href="/publications/">Publications</a>
           
         
           
@@ -78,11 +70,31 @@
 
     <div class="page-content">
       <div class="wrapper">
-        
+        <script src="/assets/js/main.js"></script>
+
+
+
+  <div class="profile col one left">
+    
+      <img class="one" src="/assets/img/pic.png">
+    
+  </div>
+
+  <div class="name" >Nan Xue</div> <p/>
+  <div class="address"> Ph.D. Student </div>
+  <div class="address"> Wuhan University & NC State University </div>
+  <div class="address"> Raleigh, NC, USA</div>
+  <div class="address"> xuenan [at] whu [dot] edu [dot] cn</div> <p/>
+  <div> <a href="https://scholar.google.com/citations?user=CKTrWqYAAAAJ&hl=en">Google Scholar </a>|
+    <a href="https://github.com/cherubicXN">Github</a>
+  </div> <p/>
+
+  <div class="news"></div>
+
 
 <div class="home">
-  <h2><strong>Short Bio</strong></h2>
     <p>I am a PhD candidate at Wuhan University majoring in 3D computer vision under the supervision of Prof. <a href="http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/index.html">Liangpei Zhang</a> and <a href="https://captain.whu.edu.cn/xia.html">Gui-Song Xia</a> in <a href="https://captain.whu.edu.cn">CAPTAIN group</a>. Currently, I am working with Prof. <a href="https://research.ece.ncsu.edu/ivmcl/">Tianfu Wu</a> at NC State University as a visiting PhD student. My research interests include line segment detection and its applications in 3D computer vision.</p>
+
 
 
   
@@ -142,141 +154,2179 @@
         </td>
       </tr>
     
-      <tr>
-        <td class="date">2019. 05:</td>
-        <td class="announcement">
-          
-            Our work on graph matching <a href="https://ieeexplore.ieee.org/document/8723156">“A Functional Representation for Graph Matching”</a> has been accepted by IEEE TPAMI.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2019. 03:</td>
-        <td class="announcement">
-          
-            I will serve as a reviewer for ICCV 2019.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2019. 03:</td>
-        <td class="announcement">
-          
-            Our code and pretrained model for AFM is released at <a href="https://github.com/cherubicXN/afm_cvpr2019">github</a>.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2019. 02:</td>
-        <td class="announcement">
-          
-            Three papers for Line Segment Detection, Oriented Object Detection and Fisheye Calibration are accepted by CVPR 2019.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2019. 01:</td>
-        <td class="announcement">
-          
-            One paper about graph matching is preprinted in <a href="https://arxiv.org/abs/1901.05179">arXiv</a>.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2018. 12:</td>
-        <td class="announcement">
-          
-            A novel learning based framework for line segment detection is preprinted and the codes will be released soon.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2018. 12:</td>
-        <td class="announcement">
-          
-            I received the Second Prize of Wuhan University Academic Innovation Award.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2018. 11:</td>
-        <td class="announcement">
-          
-            One paper about infrared image matching is accepted by Pattern Recognition Letter.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2018. 10:</td>
-        <td class="announcement">
-          
-            I am being supported by CSC to work with Prof. <a href="http://www4.ncsu.edu/~twu19/">Tianfu Wu</a> at <a href="https://www.ncsu.edu">NC State University</a>.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2018. 07:</td>
-        <td class="announcement">
-          
-            One paper about graph matching is accepted by ECCV 2018.
-
-          
-        </td>
-      </tr>
-    
-      <tr>
-        <td class="date">2017. 09:</td>
-        <td class="announcement">
-          
-            One paper about junction detection and matching is accepted by IEEE TIP.
-
-          
-        </td>
-      </tr>
-    
     </table>
   
 </div>
 
   
 
+  <div class="news"></div>
+  <div id="publications" style="position: relative; top:-60px;">
+  </div>
+  <div style="position: relative; top:-20px;">
+  <h2><strong>Publications</strong> (<a href="" id="select0" onclick="showall(0); return false;">show selected</a> / 
+    <a href="" id="select1" onclick="showall(1); return false;">show all by date</a>)
+  </h2>
+  <div id="pubs"></div>
+  </div>
+  <script id="pubs_all" language="text"> <ol class="bibliography"><li>
+
+<div id="2020-HAWP-CVPR">
   
-    <div class="social">
-  <span class="contacticon center">
-    <a href="mailto:%78%75%65%6E%61%6E@%77%68%75.%65%64%75.%63%6E"><i class="fas fa-envelope"></i></a>
+    <span class="title">Holistically-Attracted Wireframe Parsing</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Tianfu Wu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Song Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Fu-Dong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Liangpei Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Philip H.S. Torr
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
     
-    <a href="https://scholar.google.com/citations?user=CKTrWqYAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-    <a href="https://github.com/cherubicXN" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <em>In IEEE Conference on Computer Vision and Pattern Recogtion (CVPR),</em>
     
     
+      2020.
     
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
   </span>
 
-  <div class="col three caption">
-    You can even add a little note about which of these is the best way to reach you.
-
-  </div>
-</div>
-
+  <!-- Hidden abstract block -->
   
+</div>
+</li>
+<li>
+
+<div id="2020-ZAC-CVPR">
+  
+    <span class="title">Zero-Assignment Constraint for Graph Matching with Outliers</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Fu-Dong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Jin-Gang Yu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Gui-Song Xia
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recogtion (CVPR),</em>
+    
+    
+      2020.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-AFM-PAMI">
+  
+    <span class="title">Learning Regional Attraction for Line Segment Detection</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Song Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Fu-Dong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Tianfu Wu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Liangpei Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Philip H.S. Torr
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1912.09344" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="LSD_PAMI19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/LSD_PAMI19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-GeoSay">
+  
+    <span class="title">GeoSay: A geometric saliency for extracting buildings in remote sensing images</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Jin Huang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Qikai Lu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Xiaoxiang Zhu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Computer Vision and Image Understanding,</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1811.02793" target="_blank">arXiv</a>]
+  
+  
+  
+  
+  
+  
+  
+    [<a href="https://github.com/Huang-Jin/GeoSay" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-FRGM">
+  
+    <span class="title">A Functional Representation for Graph Matching</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Fudong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yipeng Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Marcello Pelillo
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+    <!-- [<a href="FRGM_PAMI19_EARLY_ACCESS.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/FRGM_PAMI19_EARLY_ACCESS.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/wangfudong/FRGM" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-AFM">
+  
+    <span class="title">Learning Attraction Field Representation for Robust Line Segment Detection</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Song Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Fudong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Tianfu Wu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Liangpei Zhang
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1812.02122" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="AFM_CVPR19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/AFM_CVPR19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/cherubicXN/afm_cvpr2019" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-LineFish">
+  
+    <span class="title">Learning to Calibrate Straight Lines for Fisheye Image Rectification</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Zhu-Cun Xue,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Weiming Shen
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1904.09856" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="Fisheye_CVPR19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/Fisheye_CVPR19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-ROITransformer">
+  
+    <span class="title">Learning RoI Transformer for Detecting Oriented Objects in Aerial Images</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Jian Ding,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yang Long,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Qikai Lu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1812.00155" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="RoiTrans_CVPR19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/RoiTrans_CVPR19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2018-Pat-Rec-L">
+  
+    <span class="title">Robust visible-infrared image matching by exploiting dominant edge orientations</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Hui Chen,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yipeng Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Qikai Lu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Gui-Song Xia
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Pattern Recognition Letter,</em>
+    
+    
+      2018.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2018-ECCV">
+  
+    <span class="title">Adaptively Transforming Graph Matching</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Fudong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yipeng Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Xiang Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Gui-Song Xia
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In the European Conference on Computer Vision (ECCV),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+    <!-- [<a href="ATGM_ECCV18.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/ATGM_ECCV18.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2018-Xue-TIP">
+  
+    <span class="title">Anisotropic-Scale Junction Detection and
+             Matching for Indoor Images</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Xiang Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Liangpei Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Weiming Shen
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Transactions on Image Processing,</em>
+    
+    
+      2018.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1703.05630" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="https://ieeexplore.ieee.org/document/8047303 " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/https://ieeexplore.ieee.org/document/8047303" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/cherubicXN/anisotropic-scale-junction-detector" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2017-ASJ-Stitching">
+  
+    <span class="title">Image Stitching Based on Anisotropic-Scale Junction</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Tian-Zhu Xiang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Liangpei Zhang
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Journal of Signal Processing,</em>
+    
+    
+      2017.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2015-XiaXWZ">
+  
+    <span class="title">Anisotropic diffusion on complex tensor fields for PolSAR image filtering</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Zifeng Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Liangpei Zhang
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>Geomatics and Information Science of Wuhan Universit (in Chinese),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2015-XuXXZ">
+  
+    <span class="title">Finding edges of buildings via a junction process in high-resolution remotely sensed images</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Bowen Xu,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Liangpei Zhang
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE International Geoscience and Remote Sensing Symposium (IGARSS),</em>
+    
+    
+      2015.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2014-XueXZ">
+  
+    <span class="title">Anisotropic diffusion on complex tensor fields for PolSAR image filtering</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Liangpei Zhang
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE International Geoscience and Remote Sensing Symposium (IGARSS),</em>
+    
+    
+      2014.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2014-LiuXYX">
+  
+    <span class="title">SAR image segmentation via non-local active contours</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Gang Liu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Wen Yang,
+              
+            
+          
+        
+      
+        
+          
+            
+              and <strong>Nan Xue</strong>
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE International Geoscience and Remote Sensing Symposium (IGARSS),</em>
+    
+    
+      2014.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li></ol> </script>
+  <script id="pubs_sel" language="text"> <ol class="bibliography"><li>
+
+<div id="2020-HAWP-CVPR">
+  
+    <span class="title">Holistically-Attracted Wireframe Parsing</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Tianfu Wu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Song Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Fu-Dong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Liangpei Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Philip H.S. Torr
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recogtion (CVPR),</em>
+    
+    
+      2020.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2020-ZAC-CVPR">
+  
+    <span class="title">Zero-Assignment Constraint for Graph Matching with Outliers</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Fu-Dong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Jin-Gang Yu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Gui-Song Xia
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recogtion (CVPR),</em>
+    
+    
+      2020.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-AFM-PAMI">
+  
+    <span class="title">Learning Regional Attraction for Line Segment Detection</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Song Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Fu-Dong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Tianfu Wu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Liangpei Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Philip H.S. Torr
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1912.09344" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="LSD_PAMI19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/LSD_PAMI19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-FRGM">
+  
+    <span class="title">A Functional Representation for Graph Matching</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Fudong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yipeng Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Marcello Pelillo
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+    <!-- [<a href="FRGM_PAMI19_EARLY_ACCESS.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/FRGM_PAMI19_EARLY_ACCESS.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/wangfudong/FRGM" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-AFM">
+  
+    <span class="title">Learning Attraction Field Representation for Robust Line Segment Detection</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Song Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Fudong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Tianfu Wu,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Liangpei Zhang
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1812.02122" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="AFM_CVPR19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/AFM_CVPR19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/cherubicXN/afm_cvpr2019" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-LineFish">
+  
+    <span class="title">Learning to Calibrate Straight Lines for Fisheye Image Rectification</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Zhu-Cun Xue,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Weiming Shen
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1904.09856" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="Fisheye_CVPR19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/Fisheye_CVPR19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2019-ROITransformer">
+  
+    <span class="title">Learning RoI Transformer for Detecting Oriented Objects in Aerial Images</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Jian Ding,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yang Long,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Qikai Lu
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In IEEE Conference on Computer Vision and Pattern Recognition (CVPR),</em>
+    
+    
+      2019.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1812.00155" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="RoiTrans_CVPR19.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/RoiTrans_CVPR19.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2018-ECCV">
+  
+    <span class="title">Adaptively Transforming Graph Matching</span>
+    <span class="author">
+      
+        
+          
+            
+              
+                Fudong Wang,
+              
+            
+          
+        
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Yipeng Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Xiang Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Gui-Song Xia
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In the European Conference on Computer Vision (ECCV),</em>
+    
+    
+      2018.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+  
+  
+    <!-- [<a href="ATGM_ECCV18.pdf " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/ATGM_ECCV18.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="2018-Xue-TIP">
+  
+    <span class="title">Anisotropic-Scale Junction Detection and
+             Matching for Indoor Images</span>
+    <span class="author">
+      
+        
+          
+            
+              <strong>Nan Xue</strong>,
+            
+          
+        
+      
+        
+          
+            
+              
+                Gui-Song Xia,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Xiang Bai,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                Liangpei Zhang,
+              
+            
+          
+        
+      
+        
+          
+            
+              
+                and Weiming Shen
+              
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>IEEE Transactions on Image Processing,</em>
+    
+    
+      2018.
+    
+    </span>
+  
+  
+
+  <span class="links">
+  
+  
+    [<a href="http://arxiv.org/abs/1703.05630" target="_blank">arXiv</a>]
+  
+  
+  
+    <!-- [<a href="https://ieeexplore.ieee.org/document/8047303 " target="_blank">PDF</a>] -->
+    [<a href="/assets/papers/https://ieeexplore.ieee.org/document/8047303" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+    [<a href="https://github.com/cherubicXN/anisotropic-scale-junction-detector" target="_blank">Code</a>]
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li></ol> </script>
+  <script>showall(0)</script>
+
+  <!--  -->
 
 </div>
 

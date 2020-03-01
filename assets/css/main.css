@@ -368,6 +368,8 @@ footer a:hover { color: #B509AC; }
 
 .center { text-align: center; }
 
+.hideanchor { height: 0; position: relative top -150px; }
+
 .post-header { margin-bottom: 40px; }
 
 .post-list { margin: 0; padding: 0; list-style: none; }
@@ -392,9 +394,11 @@ footer a:hover { color: #B509AC; }
 .project .thumbnail a span p { color: #e8e8e8; }
 .project .thumbnail a:hover span { display: block; }
 
-.profile img { box-shadow: 0 0 5px #828282; width: 100%; }
+.profile img { box-shadow: 0 0 5px #828282; width: 190px; }
 
-.address { font-family: monospace; }
+.name { font-size: 16pt; font-family: Arial, Helvetica, sans-serif; }
+
+.address { font-family: Arial; }
 .address p { margin: 0; }
 
 .news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; }
