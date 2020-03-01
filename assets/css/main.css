@@ -392,7 +392,7 @@ footer a:hover { color: #B509AC; }
 .project .thumbnail a span p { color: #e8e8e8; }
 .project .thumbnail a:hover span { display: block; }
 
-.profile img { width: 90%; }
+.profile img { width: 80%; }
 
 .name { font-size: 16pt; font-family: Arial, Helvetica, sans-serif; }
 
