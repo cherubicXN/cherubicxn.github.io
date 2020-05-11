@@ -1,0 +1,57 @@
+img.img_responsive{width:100%;height:auto;display:block}
+div.img,div.text
+{
+    display:inline-block;
+    zoom:1;
+    display*:inline;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align:middle;
+}
+div.paper{
+    padding-top: 0px; 
+    padding-bottom: 20px; 
+    background-color: white;
+}
+div.paper div.img{
+    max-width: 200px; 
+    padding-right: 0px;
+    padding-top: 5px;
+}
+div.paper div.text{
+    text-align: left;
+    vertical-align:top;
+}
+div.paper div.title{
+    font: outline;
+    font-weight: 3;
+    color: black;
+}
+div.paper div.venue{
+    font-weight: 3;
+    color: black;
+}
+div.authors{
+    font-size: 90%;
+    color: gray;
+}
+/* Authors block */
+div.authors a:link,
+div.authors a:visited{color:gray}
+span.xn{color: black}
+span.author{white-space: nowrap; font: outline;}
+span.venue{color: black;}
+@media only screen and (min-width: 600px) {
+    div.paper div.img{width:20%}
+    div.paper div.text{
+        max-width: 75%;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 599px) {
+    div.publication div.img{display:none}
+    div.publication div.text{text-align:left}
+    div.content,div.publication{padding-top:0px;padding-bottom:10px}
+    body{font-size:80%}
+}
