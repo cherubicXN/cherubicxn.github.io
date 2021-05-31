@@ -1,6 +1,7 @@
 img.img_responsive{width:100%;height:auto;display:block}
 div.img,div.text
 {
+    font-family: 'Times New Roman', Times, serif;
     display:inline-block;
     zoom:1;
     display*:inline;
@@ -31,6 +32,7 @@ div.paper div.title{
 div.paper div.venue{
     font-weight: 3;
     color: black;
+    font-style: italic;
 }
 div.authors{
     font-size: 90%;
@@ -41,7 +43,8 @@ div.authors a:link,
 div.authors a:visited{color:gray}
 span.xn{color: black}
 span.author{white-space: nowrap; font: outline;}
-span.venue{color: black;}
+span.venue{color: black;
+    font-style: italic;}
 @media only screen and (min-width: 600px) {
     div.paper div.img{width:20%}
     div.paper div.text{
