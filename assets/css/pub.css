@@ -58,3 +58,7 @@ span.venue{color: black;
     div.content,div.publication{padding-top:0px;padding-bottom:10px}
     body{font-size:80%}
 }
+
+div.group div.title{padding-left:12px;font-weight: 30}
+div.group li{float:left;width:350px}
+div.group li:nth-child(odd){padding-right:100px}

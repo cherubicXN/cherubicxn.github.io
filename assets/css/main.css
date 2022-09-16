@@ -414,6 +414,14 @@ footer a:hover { color: #2698BA; }
 .news table tr { text-align: left; }
 .news table td { padding: 6px 0; vertical-align: top; border: none; }
 
+.group { border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: 'Times New Roman', Times, serif; }
+.group h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
+.group table { border-collapse: collapse; width: 100%; }
+.group table .date { width: 8%; }
+.group table .announcement { width: 81%; }
+.group table tr { text-align: left; }
+.group table td { padding: 6px 0; vertical-align: top; border: none; }
+
 .social { border-top: 1px solid #e8e8e8; margin-top: 50px; padding-top: 20px; }
 
 .pagination { font-size: 1rem; font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; text-align: center; }
