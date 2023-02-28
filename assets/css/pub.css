@@ -38,6 +38,12 @@ div.authors{
     font-size: 90%;
     color: gray;
 }
+div.remarks{
+    font-size: 90%;
+    color: black;
+    font-style: oblique;
+    font-weight: bold;
+}
 /* Authors block */
 div.authors a:link,
 div.authors a:visited{color:gray}
