@@ -314,7 +314,7 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
 
-img { max-width: 200px; }
+img { max-width: 300px; }
 
 em img { max-width: 100%; margin-left: 0; }
 
@@ -398,7 +398,7 @@ footer a:hover { color: #2698BA; }
 
 .address { font-family: 'Times New Roman', Times, serif; }
 
-.bio { border-top: 1px; margin-top: 30px; padding-top: 20px; font-family: 'Times New Roman', Times, serif; }
+.bio { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: 'Times New Roman', Times, serif; }
 .bio h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .bio table { border-collapse: collapse; width: 100%; }
 .bio table .date { width: 19%; }
