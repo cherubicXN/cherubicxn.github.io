@@ -314,7 +314,7 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
 
-img { max-width: 300px; }
+img { max-width: 200px; }
 
 em img { max-width: 100%; margin-left: 0; }
 
