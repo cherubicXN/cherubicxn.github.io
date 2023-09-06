@@ -401,8 +401,8 @@ footer a:hover { color: #2698BA; }
 .bio { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: 'Times New Roman', Times, serif; }
 .bio h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .bio table { border-collapse: collapse; width: 100%; }
-.bio table .date { width: 19%; }
-.bio table .announcement { width: 81%; }
+.bio table .date { width: 30%; }
+.bio table .announcement { width: 70%; }
 .bio table tr { text-align: left; }
 .bio table td { padding: 6px 0; vertical-align: top; border: none; }
 
