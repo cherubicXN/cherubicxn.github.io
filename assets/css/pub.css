@@ -1,7 +1,8 @@
 img.img_responsive{width:100%;height:auto;display:block}
 div.img,div.text
 {
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
     display:inline-block;
     zoom:1;
     display*:inline;
@@ -39,20 +40,27 @@ div.paper div.venue{
 div.authors{
     font-size: 90%;
     color: gray;
+    font-style: italic;
+    word-wrap: normal;
+    /* word-break: break-all; */
 }
 div.remarks{
-    font-size: 90%;
-    color: black;
-    font-style: oblique;
-    font-weight: bold;
+    font-size: 100%;
+    /* color: rgb(251, 131, 0); */
+    color: rgb(213,123,101);
+    /* font-style: oblique; */
+    font-weight: normal;
 }
 /* Authors block */
 div.authors a:link,
 div.authors a:visited{color:gray}
-span.xn{color: black}
-span.author{white-space: nowrap; font: outline;}
-span.venue{color: black;
-    font-style: italic;}
+span.xn{color: black; font-weight: 550; font-style: normal;}
+span.author{
+    white-space: wrap; 
+    font: outline;
+}
+span.venue{color: rgb(0, 0, 0);
+    font-style: normal;}
 @media only screen and (min-width: 600px) {
     div.paper div.img{width:20%}
     div.paper div.text{
@@ -70,3 +78,21 @@ span.venue{color: black;
 div.group div.title{padding-left:12px}
 div.group li{float:left;width:350px}
 div.group li:nth-child(odd){padding-right:100px}
+
+div.institution {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+div.period {
+color: #777777;
+font-size: 15px;
+font-weight: 400;
+margin-bottom: 5px;
+}
+div.position {
+color: #000000;
+font-size: 15px;
+font-weight: 400;
+}

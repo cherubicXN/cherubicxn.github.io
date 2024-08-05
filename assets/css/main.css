@@ -392,13 +392,13 @@ footer a:hover { color: #2698BA; }
 .project .thumbnail a span p { color: #e8e8e8; }
 .project .thumbnail a:hover span { display: block; }
 
-.profile img { width: 70%; }
+.profile img { width: 100%; }
 
 .name { font-size: 24pt; font-family: Arial, Helvetica, sans-serif; }
 
-.address { font-family: 'Times New Roman', Times, serif; }
+.address { font-family: Arial, Helvetica, sans-serif; }
 
-.bio { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: 'Times New Roman', Times, serif; }
+.bio { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: Arial, Helvetica, sans-serif; }
 .bio h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .bio table { border-collapse: collapse; width: 100%; }
 .bio table .date { width: 30%; }
@@ -406,7 +406,7 @@ footer a:hover { color: #2698BA; }
 .bio table tr { text-align: left; }
 .bio table td { padding: 6px 0; vertical-align: top; border: none; }
 
-.news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: 'Times New Roman', Times, serif; }
+.news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: Arial, Helvetica, sans-serif; }
 .news h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .news table { border-collapse: collapse; width: 100%; }
 .news table .date { width: 8%; }
@@ -554,5 +554,7 @@ small, .small { font-size: 0.707rem; }
 sup { position: relative; vertical-align: middle; top: -0.9ex; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 100; }
+
+h2 { font-size: 18pt; margin: 1.5rem 0 1rem; }
 
 div.equation { margin: 0.5rem 0; }
