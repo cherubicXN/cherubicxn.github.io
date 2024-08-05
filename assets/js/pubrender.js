@@ -12,6 +12,15 @@ const venues = {
     "ECCV": "European Conference on Computer Vision (ECCV)",
 }
 
+function process_author_name(author_name){
+    for (var i = 0; i < author_name.length; i++) {
+        if (author_name[i] == " ") {
+            author_name = author_name.slice(0,i) + "&nbsp;" + author_name.slice(i+1);
+        }
+    }
+    return author_name;
+}
+
 function render_pub(
     project_name, 
     figure_path, 
@@ -84,27 +93,27 @@ function render_pub(
 
     for (var i = 0; i < author_list.length; i++) {
         var _author = author_list[i];
-        for (var j = 0; j < _author.length; j++) {
-            if (_author[j] == " ") {
-                _author = _author.slice(0,j) + "&nbsp;" + _author.slice(j+1);
-            }
-        }
+        // for (var j = 0; j < _author.length; j++) {
+        //     if (_author[j] == " ") {
+        //         _author = _author.slice(0,j) + "&nbsp;" + _author.slice(j+1);
+        //     }
+        // }
         var prefix = "";
         var author_ = document.createElement("span");
         debugger;
 
         if (_author == "Nan Xue") {
             author_.className = "author xn";
-            author_.innerText = "Nan Xue";
+            author_.innerText = _author;
         }
         else{
             author_.className = "author";
             if (coauthors[_author] == null) {
                 // prefix = "<span class='author'>";
-                author_.innerHTML = _author;
+                author_.innerHTML = process_author_name(_author);
             }
             else {
-            author_.innerHTML = "<a href=" + coauthors[_author] + ">" + _author + "</a>";
+            author_.innerHTML = "<a href=" + coauthors[_author] + ">" + process_author_name(_author) + "</a>";
             }
         }
         if (is_first_author[i] && num_first_author > 1) {
