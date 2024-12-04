@@ -4,7 +4,12 @@ const coauthors = {
     "Liang Dong": "https://www.linkedin.com/in/liang-dong-4a435694/",
     "Gui-Song Xia": "http://www.captain-whu.com/xia_En.html",
     "Tianfu Wu": "https://research.ece.ncsu.edu/ivmcl/",
-    "Yujun Shen": "https://shenyujun.github.io/"
+    "Yujun Shen": "https://shenyujun.github.io/",
+    "Mengfei Xia": "https://thuxmf.github.io/",
+    "Ran Yi": "https://yiranran.github.io/",
+    "Tieliang Gong": "https://gong-tl.github.io/", 
+    "Yong-Jin Liu": "https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm",
+    "Rui Yu": "https://ruiyu0.github.io/"
 }
 const venues = {
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -160,6 +165,29 @@ function render_pub(
     paper.appendChild(paper_info);
     
 }
+
+render_pub("PlanarSplatting", 
+    "/assets/spotlights/planarsplat.png", 
+    title="PlanarSplatting: Accurate Planar Surface Reconstruction in 3 Minutes", 
+    author_list=["Bin Tan", "Rui Yu", "Yujun Shen", "Nan Xue"], 
+    venue_name="preprint", 
+    year=2024,
+    material_list=[
+        ["arXiv", ""],
+        ["Project", "https://icetttb.github.io/PlanarSplatting/"],
+    ],
+);
+
+render_pub("ReCFG", 
+    "/assets/spotlights/recfg.png", 
+    title="Rectified Diffusion Guidance for Conditional Generation", 
+    author_list=["Mengfei Xia", "Nan Xue", "Yujun Shen", "Ran Yi", "Tieliang Gong", "Yong-Jin Liu"], 
+    venue_name="preprint", 
+    year=2024,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2410.18737"],
+    ],
+);
 
 
 render_pub("NEAT", 

@@ -96,3 +96,10 @@ color: #000000;
 font-size: 15px;
 font-weight: 400;
 }
+
+div.profile{
+    padding-top: 0px; 
+    padding-bottom: 30px; 
+    background-color: white;
+    vertical-align: middle;
+}
