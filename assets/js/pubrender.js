@@ -173,7 +173,7 @@ render_pub("PlanarSplatting",
     venue_name="preprint", 
     year=2024,
     material_list=[
-        ["arXiv", ""],
+        ["arXiv", "https://arxiv.org/pdf/2412.03451"],
         ["Project", "https://icetttb.github.io/PlanarSplatting/"],
     ],
 );
