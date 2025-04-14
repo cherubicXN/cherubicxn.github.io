@@ -9,7 +9,13 @@ const coauthors = {
     "Ran Yi": "https://yiranran.github.io/",
     "Tieliang Gong": "https://gong-tl.github.io/", 
     "Yong-Jin Liu": "https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm",
-    "Rui Yu": "https://ruiyu0.github.io/"
+    "Rui Yu": "https://ruiyu0.github.io/",
+    "Shangzhan Zhang": "https://github.com/zhanghe3z",
+    "Jianyuan Wang": "https://jytime.github.io/",
+    "Yinghao Xu": "https://justimyhxu.github.io/",
+    "Christian Rupprecht": "https://www.christianrupprecht.com/",
+    "Xiaowei Zhou": "https://www.xzhou.me/",
+    "Gordon Wetzstein": "https://stanford.edu/~gordonwz/",
 }
 const venues = {
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -65,7 +71,12 @@ function render_pub(
     is_first_author = [];
     is_corresponding_author = []
     for (var i = 0; i < author_list.length; i++) {
-        is_first_author.push(false);
+        if (i==0) {
+            is_first_author.push(true)
+        }
+        else {
+            is_first_author.push(false);
+        }
         is_corresponding_author.push(false);
     }
     var num_first_author = 0;
@@ -86,14 +97,7 @@ function render_pub(
             is_corresponding_author[corresponding_author[i]] = true;
         }
     }
-    if (num_first_author == 2 && equal_contributions) {
-        var random = Math.random();
-        if (random > 0.5) {
-            var temp = author_list[0];
-            author_list[0] = author_list[1];
-            author_list[1] = temp;
-        }
-    }
+    // debugger;
 
 
     for (var i = 0; i < author_list.length; i++) {
@@ -105,7 +109,6 @@ function render_pub(
         // }
         var prefix = "";
         var author_ = document.createElement("span");
-        debugger;
 
         if (_author == "Nan Xue") {
             author_.className = "author xn";
@@ -135,7 +138,7 @@ function render_pub(
         authors.appendChild(author_);
 
     }
-    debugger;
+    // debugger;
     paper_info.appendChild(authors);
 
     var venue = document.createElement("div");
@@ -166,27 +169,77 @@ function render_pub(
     
 }
 
+render_pub("Flare", 
+    "/assets/spotlights/flare.jpg", 
+    title="FLARE: Feed-forward Geometry, Appearance and Camera Estimation from Uncalibrated Sparse Views", 
+    author_list=[
+        "Shangzhan Zhang", 
+        "Jianyuan Wang", 
+        "Yinghao Xu", 
+        "Nan Xue", 
+        "Christian Rupprecht", 
+        "Xiaowei Zhou", 
+        "Yujun Shen", 
+        "Gordon Wetzstein"
+    ], 
+    venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)", 
+    year=2025,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2502.12138"],
+        ["Project", "https://zhanghe3z.github.io/FLARE/"],
+        ["Code", "https://github.com/ant-research/FLARE"],
+        ["Demo", "https://zhanghe3z.github.io/FLARE/videos/teaser_video.mp4"]
+    ],
+    comments = null,
+    first_author=[0,1,2]
+);
+
+render_pub("ScaleLSD", 
+    "/assets/spotlights/scalelsd.png", 
+    title="ScaleLSD: Scalable Deep Line Segment Detection Streamlined", 
+    author_list=[
+        "Zeran Ke",
+        "Bin Tan",
+        "Xianwei Zheng",
+        "Yujun Shen",
+        "Tianfu Wu",
+        "Nan Xue"
+    ], 
+    venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)", 
+    year=2025,
+    material_list=[],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[5]
+);
+
 render_pub("PlanarSplatting", 
     "/assets/spotlights/planarsplat.png", 
     title="PlanarSplatting: Accurate Planar Surface Reconstruction in 3 Minutes", 
     author_list=["Bin Tan", "Rui Yu", "Yujun Shen", "Nan Xue"], 
-    venue_name="preprint", 
-    year=2024,
+    venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)", 
+    year=2025,
     material_list=[
         ["arXiv", "https://arxiv.org/pdf/2412.03451"],
         ["Project", "https://icetttb.github.io/PlanarSplatting/"],
     ],
+    comments = "Highlight Presentation; Received 5/5/5 scores from all reviewers",
+    first_author=[0],
+    corresponding_author=[3]
 );
 
 render_pub("ReCFG", 
     "/assets/spotlights/recfg.png", 
     title="Rectified Diffusion Guidance for Conditional Generation", 
     author_list=["Mengfei Xia", "Nan Xue", "Yujun Shen", "Ran Yi", "Tieliang Gong", "Yong-Jin Liu"], 
-    venue_name="preprint", 
-    year=2024,
+    venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)", 
+    year=2025,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/2410.18737"],
     ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[2,5]
 );
 
 
