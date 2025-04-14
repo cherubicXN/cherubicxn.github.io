@@ -1,105 +1,150 @@
-img.img_responsive{width:100%;height:auto;display:block}
-div.img,div.text
-{
-    /* font-family: 'Times New Roman', Times, serif; */
+img.img_responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.img,
+div.text {
     font-family: Arial, Helvetica, sans-serif;
-    display:inline-block;
-    zoom:1;
-    display*:inline;
-    text-align:left;
-    margin-left:auto;
-    margin-right:auto;
-    vertical-align:middle;
-}
-div.paper{
-    padding-top: 0px; 
-    padding-bottom: 30px; 
-    background-color: white;
-    vertical-align: middle;
-}
-div.paper div.img{
-    max-width: 300px; 
-    padding-right: 0px;
-    vertical-align: middle;
-    padding-right: 20px;
-}
-div.paper div.text{
+    display: inline-block;
     text-align: left;
-    vertical-align:middle;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
 }
-div.paper div.title{
+
+div.paper {
+    padding: 2px 15px 2px 15px;
+    background-color: #ffffff;
+    vertical-align: top;
+    border-style: none;
+    margin-bottom: 4px;
+    border-left: 10px solid #ffcc99;
+}
+
+div.paper div.img {
+    max-width: 400px;
+    width: 30%;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+div.paper div.text {
+    text-align: left;
+    vertical-align: middle;
+}
+
+div.paper div.title {
     font: outline;
     font-weight: 3;
     color: black;
 }
-div.paper div.venue{
+
+div.paper div.venue {
     font-weight: 3;
     color: black;
     font-style: italic;
 }
-div.authors{
+
+div.authors {
     font-size: 90%;
     color: gray;
     font-style: italic;
     word-wrap: normal;
-    /* word-break: break-all; */
 }
-div.remarks{
+
+div.remarks {
     font-size: 100%;
-    /* color: rgb(251, 131, 0); */
-    color: rgb(213,123,101);
-    /* font-style: oblique; */
+    color: rgb(213, 123, 101);
     font-weight: normal;
 }
+
 /* Authors block */
 div.authors a:link,
-div.authors a:visited{color:gray}
-span.xn{color: black; font-weight: 550; font-style: normal;}
-span.author{
-    white-space: wrap; 
+div.authors a:visited {
+    color: gray;
+}
+
+span.xn {
+    color: black;
+    font-weight: 550;
+    font-style: normal;
+}
+
+span.author {
+    white-space: wrap;
     font: outline;
 }
-span.venue{color: rgb(0, 0, 0);
-    font-style: normal;}
+
+span.venue {
+    color: rgb(0, 0, 0);
+    font-style: normal;
+}
+
 @media only screen and (min-width: 600px) {
-    div.paper div.img{width:20%}
-    div.paper div.text{
-        max-width: 75%;
+    div.paper div.img {
+        width: 25%;
+    }
+    div.paper div.text {
+        max-width: 70%;
         text-align: left;
     }
 }
+
 @media only screen and (max-width: 599px) {
-    div.publication div.img{display:none}
-    div.publication div.text{text-align:left}
-    div.content,div.publication{padding-top:0px;padding-bottom:10px}
-    body{font-size:80%}
+    div.publication div.img {
+        display: none;
+    }
+    div.publication div.text {
+        text-align: left;
+    }
+    div.content,
+    div.publication {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    body {
+        font-size: 80%;
+    }
 }
 
-div.group div.title{padding-left:12px}
-div.group li{float:left;width:350px}
-div.group li:nth-child(odd){padding-right:100px}
+div.group div.title {
+    padding-left: 12px;
+}
+
+div.group li {
+    float: left;
+    width: 350px;
+}
+
+div.group li:nth-child(odd) {
+    padding-right: 100px;
+}
 
 div.institution {
     color: #000000;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
-  }
-div.period {
-color: #777777;
-font-size: 15px;
-font-weight: 400;
-margin-bottom: 5px;
-}
-div.position {
-color: #000000;
-font-size: 15px;
-font-weight: 400;
 }
 
-div.profile{
-    padding-top: 0px; 
-    padding-bottom: 30px; 
+div.period {
+    color: #777777;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+div.position {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+div.profile {
+    padding-top: 0px;
+    padding-bottom: 30px;
     background-color: white;
     vertical-align: middle;
 }
