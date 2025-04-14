@@ -13,7 +13,7 @@ const coauthors = {
     "Shangzhan Zhang": "https://github.com/zhanghe3z",
     "Jianyuan Wang": "https://jytime.github.io/",
     "Yinghao Xu": "https://justimyhxu.github.io/",
-    "Christian Rupprecht": "https://www.christianrupprecht.com/",
+    "Christian Rupprecht": "https://chrirupp.github.io/",
     "Xiaowei Zhou": "https://www.xzhou.me/",
     "Gordon Wetzstein": "https://stanford.edu/~gordonwz/",
 }
