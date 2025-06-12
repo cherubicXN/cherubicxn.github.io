@@ -207,7 +207,11 @@ render_pub("ScaleLSD",
     ], 
     venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)", 
     year=2025,
-    material_list=[],
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2506.09369"],
+        ["Project", "https://ant-research.github.io/scalelsd/"],
+        ["Code", "https://github.com/ant-research/scalelsd"]
+    ],
     comments = null,
     first_author=[0],
     corresponding_author=[5]
