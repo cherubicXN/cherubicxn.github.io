@@ -226,6 +226,7 @@ render_pub("PlanarSplatting",
     material_list=[
         ["arXiv", "https://arxiv.org/pdf/2412.03451"],
         ["Project", "https://icetttb.github.io/PlanarSplatting/"],
+        ["Code", "https://github.com/ant-research/PlanarSplatting"]
     ],
     comments = "Highlight Presentation; Received 5/5/5 scores from all reviewers",
     first_author=[0],
