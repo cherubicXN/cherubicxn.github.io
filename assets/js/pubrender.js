@@ -16,6 +16,8 @@ const coauthors = {
     "Christian Rupprecht": "https://chrirupp.github.io/",
     "Xiaowei Zhou": "https://www.xzhou.me/",
     "Gordon Wetzstein": "https://stanford.edu/~gordonwz/",
+    "Changkun Liu": "https://lck666666.github.io/",
+    "Tristan Braud": "https://braudt.people.ust.hk/",
 }
 const venues = {
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -52,7 +54,16 @@ function render_pub(
     var paper = document.getElementsByName(project_name)[0];
     var img = document.createElement("div");
     img.className = "img";
-    img.innerHTML = "<img class='img_responsive' src=" + figure_path + ">";
+    var isObj = (typeof figure_path === 'object' && figure_path !== null);
+    var src = isObj ? (figure_path.video || figure_path.src) : figure_path;
+    var poster = isObj ? (figure_path.poster || null) : null;
+    var isVideo = typeof src === 'string' && /\.(mp4|webm|mov)(\?.*)?$/i.test(src);
+    if (isVideo) {
+        var posterAttr = poster ? (" poster='" + poster + "'") : "";
+        img.innerHTML = "<video class='img_responsive' src='" + src + "'" + posterAttr + " autoplay muted loop playsinline preload='metadata'></video>";
+    } else {
+        img.innerHTML = "<img class='img_responsive' src='" + src + "'>";
+    }
     paper.appendChild(img);
 
     var paper_info = document.createElement("div");
@@ -169,6 +180,66 @@ function render_pub(
     
 }
 
+render_pub("UCD", 
+    "/assets/spotlights/ucd.png", 
+    title="UCD: Unconditional Discriminator Promotes Nash Equilibrium in GANs", 
+    author_list=["Mengfei Xia", "Nan Xue", "Jiapeng Zhu", "Yujun Shen"], 
+    venue_name="preprint", 
+    year=2025,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2510.00624"],
+    ],
+    comments = null,
+    first_author=[0,1],
+    corresponding_author=[3]
+);
+
+render_pub("Plana3r", 
+    "/assets/spotlights/plana3r.png", 
+    title="PLANA3R: Zero-shot Metric Planar 3D Reconstruction via Feed-Forward Planar Splatting", 
+    author_list=["Changkun Liu", "Bin Tan", "Zeran Ke", "Shangzhan Zhang", "Jiachen Liu", "Ming Qian", "Nan Xue", "Yujun Shen", "Tristan Braud"], 
+    venue_name="Neural Information Processing Systems (NeurIPS)", 
+    year=2025,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2510.18714"],
+        ["Project", "https://lck666666.github.io/plana3r/"],
+        ["Code", "https://github.com/lck666666/plana3r"],
+    ],
+    comments = null,
+    first_author=[0,1],
+    corresponding_author=[6]
+);
+
+render_pub("eda", 
+    "/assets/spotlights/eda.png", 
+    title="Equivariant Flow Matching for Point Cloud Assembly", 
+    author_list=["Ziming Wang","Nan Xue", "Rebecka Jörnsten"], 
+    venue_name="IEEE International Conference on Computer Vision (ICCV)", 
+    year=2025,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2505.21539"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[2]
+);
+
+render_pub("Spatracker2", 
+    "/assets/spotlights/teaser_spatrack2.mp4", 
+    title="SpatialTrackerv2: 3D Point Tracking Made Easy", 
+    author_list=["Yuxi Xiao", "Jianyuan Wang", "Nan Xue",  "Nikita Karaev", "Yuri Makarov", "Bingyi Kang", "Xing Zhu", "Hujun Bao", "Yujun Shen", "Xiaowei Zhou"], 
+    venue_name="IEEE International Conference on Computer Vision (ICCV)", 
+    year=2025,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2507.12462"],
+        ["Project", "https://spatialtracker.github.io/"],
+        ["Code", "https://github.com/henry123-boy/SpaTracker2"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[9]
+);
+
 render_pub("Flare", 
     "/assets/spotlights/flare.jpg", 
     title="FLARE: Feed-forward Geometry, Appearance and Camera Estimation from Uncalibrated Sparse Views", 
@@ -207,11 +278,7 @@ render_pub("ScaleLSD",
     ], 
     venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)", 
     year=2025,
-    material_list=[
-        ["arXiv", "https://arxiv.org/abs/2506.09369"],
-        ["Project", "https://ant-research.github.io/scalelsd/"],
-        ["Code", "https://github.com/ant-research/scalelsd"]
-    ],
+    material_list=[],
     comments = null,
     first_author=[0],
     corresponding_author=[5]
@@ -226,7 +293,6 @@ render_pub("PlanarSplatting",
     material_list=[
         ["arXiv", "https://arxiv.org/pdf/2412.03451"],
         ["Project", "https://icetttb.github.io/PlanarSplatting/"],
-        ["Code", "https://github.com/ant-research/PlanarSplatting"]
     ],
     comments = "Highlight Presentation; Received 5/5/5 scores from all reviewers",
     first_author=[0],
