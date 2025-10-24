@@ -214,7 +214,7 @@ render_pub("eda",
     "/assets/spotlights/eda.png", 
     title="Equivariant Flow Matching for Point Cloud Assembly", 
     author_list=["Ziming Wang","Nan Xue", "Rebecka Jörnsten"], 
-    venue_name="IEEE International Conference on Computer Vision (ICCV)", 
+    venue_name="preprint", 
     year=2025,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/2505.21539"],
