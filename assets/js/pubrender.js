@@ -307,6 +307,7 @@ render_pub("ReCFG",
     year=2025,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/2410.18737"],
+        ["Code", "https://github.com/thuxmf/recfg"],
     ],
     comments = null,
     first_author=[0],
