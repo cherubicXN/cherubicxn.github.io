@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <!-- Adaptively Setting Scale Ratio -->
+  <script type="text/javascript" src="./assets/js/utils.js"></script>
+
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  
+  <title>Nan Xue | Repository Guidelines</title>
+
+  <meta name="description" content="Personal website of Nan Xue">
+
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/pub.css">
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/scroll.js"></script>
+  <script src="/assets/js/widgets.js" charset="utf-8"></script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+  
+    <span class="site-title">
+        
+        Nan Xue
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="home" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="#index">Home</a>
+        <a class="page-link" href="#publications">Publications</a>
+        <!-- Pages -->
+        <!-- 
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/AGENTS.html">Repository Guidelines</a>
+          
+        
+          
+         -->
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h2><strong>Repository Guidelines</strong></h2>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content Repository Guidelines clearfix">
+    <h1 id="repository-guidelines">Repository Guidelines</h1>
+
+<h2 id="project-structure--module-organization">Project Structure &amp; Module Organization</h2>
+<ul>
+  <li>Jekyll site. Key dirs: <code class="language-plaintext highlighter-rouge">/_pages</code> (site pages), <code class="language-plaintext highlighter-rouge">/_layouts</code> and <code class="language-plaintext highlighter-rouge">/_includes</code> (templates/partials), <code class="language-plaintext highlighter-rouge">/_sass</code> (styles), <code class="language-plaintext highlighter-rouge">/_news</code> (announcements), <code class="language-plaintext highlighter-rouge">/_bibliography</code> and <code class="language-plaintext highlighter-rouge">_includes/bibfiles/&lt;year&gt;/</code> (publications), <code class="language-plaintext highlighter-rouge">projects/</code> and <code class="language-plaintext highlighter-rouge">blog/</code> (static pages), <code class="language-plaintext highlighter-rouge">assets/</code> (css, js, images, papers, webfonts), <code class="language-plaintext highlighter-rouge">bin/</code> (scripts).</li>
+  <li>Content conventions: news files in <code class="language-plaintext highlighter-rouge">_news</code> named <code class="language-plaintext highlighter-rouge">YYYY_topic.md</code> (e.g., <code class="language-plaintext highlighter-rouge">2025_cvpr.md</code>); publication entries as HTML in <code class="language-plaintext highlighter-rouge">_includes/bibfiles/&lt;year&gt;/</code>.</li>
+  <li>Configuration: <code class="language-plaintext highlighter-rouge">_config.yml</code>. Custom domain: <code class="language-plaintext highlighter-rouge">CNAME</code>. Do not edit <code class="language-plaintext highlighter-rouge">_site/</code> (build output).</li>
+</ul>
+
+<h2 id="build-test-and-development-commands">Build, Test, and Development Commands</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">bundle install</code> — install Ruby gems from <code class="language-plaintext highlighter-rouge">Gemfile</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> or <code class="language-plaintext highlighter-rouge">make preview</code> — run local dev server at <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> with live rebuild.</li>
+  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> or <code class="language-plaintext highlighter-rouge">bin/cibuild</code> — build site into <code class="language-plaintext highlighter-rouge">_site/</code> and catch build errors.</li>
+  <li><code class="language-plaintext highlighter-rouge">make deploy</code> or <code class="language-plaintext highlighter-rouge">bin/deploy</code> — build and push the generated site to the deploy branch. Requires a clean git state and will rewrite the deploy branch history.</li>
+</ul>
+
+<h2 id="coding-style--naming-conventions">Coding Style &amp; Naming Conventions</h2>
+<ul>
+  <li>Markdown/HTML: 2-space indentation; use semantic HTML; keep lines ~100 chars. Place pages in <code class="language-plaintext highlighter-rouge">_pages/*.md</code>.</li>
+  <li>SCSS: prefer variables/mixins from <code class="language-plaintext highlighter-rouge">_sass/_variables.scss</code>; one component per partial when possible.</li>
+  <li>JS: keep lightweight, ES5/ES6 without transpile; place in <code class="language-plaintext highlighter-rouge">assets/js/</code>.</li>
+  <li>Assets: images under <code class="language-plaintext highlighter-rouge">assets/img/</code> or <code class="language-plaintext highlighter-rouge">assets/spotlights/</code>; papers under <code class="language-plaintext highlighter-rouge">assets/papers/Name_ConfYY.pdf</code>.</li>
+</ul>
+
+<h2 id="testing-guidelines">Testing Guidelines</h2>
+<ul>
+  <li>No unit tests. Validate with <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> (no errors/warnings).</li>
+  <li>Manually verify key pages and links via <code class="language-plaintext highlighter-rouge">jekyll serve</code>. For news/publications, confirm formatting and links render correctly.</li>
+</ul>
+
+<h2 id="commit--pull-request-guidelines">Commit &amp; Pull Request Guidelines</h2>
+<ul>
+  <li>Commits: imperative mood, concise context-first. Examples: <code class="language-plaintext highlighter-rouge">news: add 2025 CVPR post</code>, <code class="language-plaintext highlighter-rouge">styles: tweak header spacing</code>, <code class="language-plaintext highlighter-rouge">build: bump github-pages</code>.</li>
+  <li>PRs: include summary, rationale, affected pages/sections, screenshots for visual changes, and confirm “Built locally without errors”. Link related issues if any.</li>
+</ul>
+
+<h2 id="security--configuration-tips">Security &amp; Configuration Tips</h2>
+<ul>
+  <li>Keep <code class="language-plaintext highlighter-rouge">CNAME</code> intact unless the domain changes. Edit <code class="language-plaintext highlighter-rouge">_config.yml</code> cautiously (e.g., <code class="language-plaintext highlighter-rouge">news_limit</code>).</li>
+  <li>Do not commit <code class="language-plaintext highlighter-rouge">_site/</code>; deployments are handled by <code class="language-plaintext highlighter-rouge">make all</code>/<code class="language-plaintext highlighter-rouge">bin/deploy</code>.</li>
+</ul>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 Nan Xue.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+    <!-- <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2023000819号-1</a> -->
+
+  </div>
+  <!-- <script>var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});</script> -->
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<!-- <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'G-5Q4YNR59Z5', 'auto');
+ga('send', 'pageview');
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Q4YNR59Z5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5Q4YNR59Z5');
+</script>
+
+  </body>
+
+</html>

@@ -180,11 +180,27 @@ function render_pub(
     
 }
 
-render_pub("UCD", 
-    "/assets/spotlights/ucd.png", 
-    title="UCD: Unconditional Discriminator Promotes Nash Equilibrium in GANs", 
-    author_list=["Mengfei Xia", "Nan Xue", "Jiapeng Zhu", "Yujun Shen"], 
-    venue_name="preprint", 
+render_pub("LingBotDepth",
+    "/assets/spotlights/lingbot-depth.mp4",
+    title="LingBot-Depth: Masked Depth Modeling for Spatial Perception",
+    author_list=["Bin Tan", "Changjiang Sun", "Xiage Qin", "Hanat Adai", "Zelin Fu", "Tianxiang Zhou", "Han Zhang", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Nan Xue"],
+    venue_name="preprint",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2601.17895"],
+        ["Project", "https://technology.robbyant.com/lingbot-depth"],
+        ["Code", "https://github.com/Robbyant/lingbot-depth"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[10]
+);
+
+render_pub("UCD",
+    "/assets/spotlights/ucd.png",
+    title="UCD: Unconditional Discriminator Promotes Nash Equilibrium in GANs",
+    author_list=["Mengfei Xia", "Nan Xue", "Jiapeng Zhu", "Yujun Shen"],
+    venue_name="preprint",
     year=2025,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/2510.00624"],
@@ -214,7 +230,7 @@ render_pub("eda",
     "/assets/spotlights/eda.png", 
     title="Equivariant Flow Matching for Point Cloud Assembly", 
     author_list=["Ziming Wang","Nan Xue", "Rebecka Jörnsten"], 
-    venue_name="preprint", 
+    venue_name="IEEE International Conference on Computer Vision (ICCV)", 
     year=2025,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/2505.21539"],
