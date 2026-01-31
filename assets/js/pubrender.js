@@ -7,7 +7,7 @@ const coauthors = {
     "Yujun Shen": "https://shenyujun.github.io/",
     "Mengfei Xia": "https://thuxmf.github.io/",
     "Ran Yi": "https://yiranran.github.io/",
-    "Tieliang Gong": "https://gong-tl.github.io/", 
+    "Tieliang Gong": "https://gong-tl.github.io/",
     "Yong-Jin Liu": "https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm",
     "Rui Yu": "https://ruiyu0.github.io/",
     "Shangzhan Zhang": "https://github.com/zhanghe3z",
@@ -18,6 +18,9 @@ const coauthors = {
     "Gordon Wetzstein": "https://stanford.edu/~gordonwz/",
     "Changkun Liu": "https://lck666666.github.io/",
     "Tristan Braud": "https://braudt.people.ust.hk/",
+    "Qihang Zhang": "https://zqh0253.github.io/",
+    "Yiming Luo": "https://scholar.google.com/citations?user=H1pw5NEAAAAJ&hl=en",
+    "Zelin Gao": "https://scholar.google.com/citations?user=kvHYP9MAAAAJ&hl=en",
 }
 const venues = {
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -179,6 +182,21 @@ function render_pub(
     paper.appendChild(paper_info);
     
 }
+
+render_pub("LingBotVA",
+    "/assets/spotlights/lingbot-va.png",
+    title="Causal World Modeling for Robot Control",
+    author_list=["Lin Li", "Qihang Zhang", "Yiming Luo", "Shuai Yang", "Ruilin Wang", "Fei Han", "Mingrui Yu", "Zelin Gao", "Nan Xue", "Xing Zhu", "Yujun Shen", "Yinghao Xu"],
+    venue_name="preprint",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2601.21998"],
+        ["Code", "https://github.com/Robbyant/lingbot-va"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[11]
+);
 
 render_pub("LingBotDepth",
     "/assets/spotlights/lingbot-depth.mp4",
