@@ -183,6 +183,22 @@ function render_pub(
     
 }
 
+render_pub("LiPMAP",
+    "/assets/spotlights/lipmap.png",
+    title="LiP-Map: Interacted Planes Reveal 3D Line Mapping",
+    author_list=["Zeran Ke", "Bin Tan", "Gui-Song Xia", "Yujun Shen", "Nan Xue"],
+    venue_name="IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI)",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2602.01296"],
+        ["Project", "https://calmke.github.io/LiPMAP/"],
+        ["Code", "https://github.com/calmke/LiPMAP"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[4]
+);
+
 render_pub("LingBotVA",
     "/assets/spotlights/lingbot-va.png",
     title="Causal World Modeling for Robot Control",
@@ -228,7 +244,7 @@ render_pub("UCD",
     corresponding_author=[3]
 );
 
-render_pub("Plana3r", 
+render_pub("Plana3r",
     "/assets/spotlights/plana3r.png", 
     title="PLANA3R: Zero-shot Metric Planar 3D Reconstruction via Feed-Forward Planar Splatting", 
     author_list=["Changkun Liu", "Bin Tan", "Zeran Ke", "Shangzhan Zhang", "Jiachen Liu", "Ming Qian", "Nan Xue", "Yujun Shen", "Tristan Braud"], 
