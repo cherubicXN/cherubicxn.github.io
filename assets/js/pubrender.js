@@ -21,6 +21,11 @@ const coauthors = {
     "Qihang Zhang": "https://zqh0253.github.io/",
     "Yiming Luo": "https://scholar.google.com/citations?user=H1pw5NEAAAAJ&hl=en",
     "Zelin Gao": "https://scholar.google.com/citations?user=kvHYP9MAAAAJ&hl=en",
+    "Shaohui Liu": "https://b1ueber2y.me/",
+    "Kecheng Zheng": "https://zkcys001.github.io/",
+    "Ka Leong Cheng": "https://felixcheng97.github.io/",
+    "Hao Ouyang": "https://ken-ouyang.github.io/",
+    "Zifan Shi": "https://vivianszf.github.io/",
 }
 const venues = {
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -62,8 +67,22 @@ function render_pub(
     var poster = isObj ? (figure_path.poster || null) : null;
     var isVideo = typeof src === 'string' && /\.(mp4|webm|mov)(\?.*)?$/i.test(src);
     if (isVideo) {
-        var posterAttr = poster ? (" poster='" + poster + "'") : "";
-        img.innerHTML = "<video class='img_responsive' src='" + src + "'" + posterAttr + " autoplay muted loop playsinline preload='metadata'></video>";
+        // Build the video via DOM APIs: Safari ignores a `muted` attribute set
+        // through innerHTML, which then blocks autoplay and paints nothing.
+        var video = document.createElement("video");
+        video.className = "img_responsive";
+        video.src = src;
+        if (poster) video.setAttribute("poster", poster);
+        video.muted = true;
+        video.setAttribute("muted", "");
+        video.autoplay = true;
+        video.loop = true;
+        video.playsInline = true;
+        video.setAttribute("playsinline", "");
+        video.preload = "auto";
+        img.appendChild(video);
+        var playing = video.play();
+        if (playing && playing.catch) playing.catch(function () {});
     } else {
         img.innerHTML = "<img class='img_responsive' src='" + src + "'>";
     }
@@ -182,6 +201,53 @@ function render_pub(
     paper.appendChild(paper_info);
     
 }
+
+render_pub("LingBotVA2",
+    "/assets/spotlights/lingbot-va2.png",
+    title="Native Video-Action Pretraining for Generalizable Robot Control",
+    author_list=["Qihang Zhang", "Lin Li", "Luyao Zhang", "Shuai Yang", "Yiming Luo", "Shuaiting Li", "Ruilin Wang", "Junke Wang", "Jiahao Shao", "Gangwei Xu", "Jiaming Zhou", "Yishu Shen", "Yudong Jin", "Fangyi Xu", "Shuailei Ma", "Jiaqi Liao", "Guanxing Lu", "Zifan Shi", "Yongkun Wen", "Yujie Zhao", "Weixuan Tang", "Xinyang Wang", "Chaojian Li", "Jiapeng Zhu", "Ka Leong Cheng", "Nan Xue", "Xing Zhu", "Yujun Shen", "Yinghao Xu"],
+    venue_name="preprint",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2607.08639"],
+        ["Project", "https://technology.robbyant.com/lingbot-va-v2"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[28]
+);
+
+render_pub("LingBotVideo",
+    "/assets/spotlights/lingbot-video.png",
+    title="LingBot-Video: Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+    author_list=["Shuailei Ma", "Jiaqi Liao", "Xinyang Wang", "Jingjing Wang", "Chaoran Feng", "Zijing Hu", "Chong Bao", "Zichen Xi", "Yuqi Gan", "Weisen Wang", "Yanhong Zeng", "Qin Zhao", "Zifan Shi", "Wei Wu", "Hao Ouyang", "Qiuyu Wang", "Shangzhan Zhang", "Jiahao Shao", "Yipengjing Sun", "Liangxiao Hu", "Lunke Pan", "Nan Xue", "Kecheng Zheng", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Ka Leong Cheng"],
+    venue_name="preprint",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2607.07675"],
+        ["Project", "https://technology.robbyant.com/lingbot-video"],
+        ["Code", "https://github.com/robbyant/lingbot-video"],
+    ],
+    comments = null,
+    first_author=[0, 1, 2, 3],
+    corresponding_author=[26]
+);
+
+render_pub("LingBotVision",
+    "/assets/spotlights/lingbot-vision.mp4",
+    title="LingBot-Vision: Vision Pretraining for Dense Spatial Perception",
+    author_list=["Zelin Fu", "Bin Tan", "Changjiang Sun", "Shaohui Liu", "Kecheng Zheng", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Nan Xue"],
+    venue_name="preprint",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2607.05247"],
+        ["Project", "https://technology.robbyant.com/lingbot-vision"],
+        ["Code", "https://github.com/robbyant/lingbot-vision"],
+    ],
+    comments = null,
+    first_author=[0, 1],
+    corresponding_author=[8]
+);
 
 render_pub("LiPMAP",
     "/assets/spotlights/lipmap.png",
@@ -711,7 +777,7 @@ render_pub("PlaneTR",
     year=2021,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/2107.13108"],
-        ["Code", "http://git.io/PlaneTR"],
+        ["Code", "https://github.com/IceTTTb/PlaneTR3D"],
     ],
     comments=null,
     first_author=[0,1],
@@ -852,7 +918,7 @@ render_pub("AFM",
     venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
     year=2019,
     material_list=[
-        ["arXiv", "http://arxiv.org/abs/1812.02122"],
+        ["arXiv", "https://arxiv.org/abs/1812.02122"],
         ["Paper", "https://openaccess.thecvf.com/content_CVPR_2019/papers/Xue_Learning_Attraction_Field_Representation_for_Robust_Line_Segment_Detection_CVPR_2019_paper.pdf"],
         ["Code","https://github.com/cherubicXN/afm_cvpr2019"],
     ]
@@ -870,7 +936,7 @@ render_pub("Fisheye-Calibration",
     venue_name="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
     year=2019,
     material_list=[
-        ["Paper", "http://openaccess.thecvf.com/content_CVPR_2019/papers/Xue_Learning_to_Calibrate_Straight_Lines_for_Fisheye_Image_Rectification_CVPR_2019_paper.pdf"],
+        ["Paper", "https://openaccess.thecvf.com/content_CVPR_2019/papers/Xue_Learning_to_Calibrate_Straight_Lines_for_Fisheye_Image_Rectification_CVPR_2019_paper.pdf"],
     ]
 )
 
@@ -924,7 +990,7 @@ render_pub("ASJ",
     year=2018,
     material_list=[
         ["arXiv", "https://arxiv.org/abs/1703.05630"],
-        ["IEEEXplore", "http://ieeexplore.ieee.org/document/8047303/"],
+        ["IEEEXplore", "https://ieeexplore.ieee.org/document/8047303/"],
         ["Code", "https://github.com/cherubicXN/anisotropic-scale-junction-detector"],
     ],
 )

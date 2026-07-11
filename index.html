@@ -6,20 +6,20 @@
 
   <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <title>Nan Xue</title>
 
   <meta name="description" content="Personal website of Nan Xue">
 
 
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/pub.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1783746879">
+  <link rel="stylesheet" href="/assets/css/pub.css?v=1783746879">
 
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/scroll.js"></script>
-  <script src="/assets/js/widgets.js" charset="utf-8"></script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="/assets/js/main.js?v=1783746879"></script>
+  <script src="/assets/js/scroll.js?v=1783746879"></script>
+  <script src="/assets/js/widgets.js?v=1783746879" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 </head>
 
@@ -37,7 +37,7 @@
     
 
     <nav class="site-nav">
-      <input type="checkbox" id="home" class="nav-trigger" />
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -63,14 +63,14 @@
           
         
           
-            <a class="page-link" href="http://localhost:4000/AGENTS.html">Repository Guidelines</a>
+            <a class="page-link" href="/AGENTS.html">Repository Guidelines</a>
           
         
           
          -->
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="http://localhost:4000/assets/pdf/CV.pdf">vitae</a> -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
 
       </div>
     </nav>
@@ -87,7 +87,7 @@
   
 <div id="index" style="position: relative; top:-60px;"></div>
 <br>
-<table style="font-size: 12pt;" width="100%" border="0">
+<table class="profile-table" style="font-size: 12pt;" width="100%" border="0">
 <tbody border="0">
   <tr>
     <td width="60%" style="border: none;">
@@ -95,14 +95,7 @@
         <b>Nan Xue</b>
       </p>
       <p style="text-align:left; font-family: Arial, Helvetica, sans-serif;" >
-      I'm leading a research team in the <a href="https://www.robbyant.com/">RobbyAnt</a>, and a staff research scientist at <a href="https://www.antgroup.com/en">Ant Research</a>. 
-        My current research focuses on developing general learning algorithms for structured visual geometry in computer vision. Here is a <a href="./assets/research-statement.pdf" id="research-statement">research statement</a> about my work.
-        My profile photo is computed by my <a href="https://github.com/cherubicXN/hawp">HAWPv3</a>.
-      </p>
-      <p style="text-align:left; font-family: Arial, Helvetica, sans-serif; background-color: #f8f9fa; padding: 15px; border-left: 4px solid #007bff; border-radius: 4px;" >
-        I'm looking for research interns who are interested in <u>structured visual geometry</u>.
-        Please feel free to drop me an email with your CV.
-      </p>
+      I'm leading a research team at <a href="https://www.robbyant.com/">RobbyAnt</a>, dedicated to self-supervised learning of structured, metric, and actionable representations for robotics. Previously, I spent 10 years working on structured visual geometry &mdash; line segments, wireframes, and planes &mdash; in computer vision. My profile photo is computed by my <a href="https://github.com/cherubicXN/hawp">HAWPv3</a>.
       <br>
       <a href="https://scholar.google.com/citations?user=CKTrWqYAAAAJ" target="_blank">Google Scholar</a>&nbsp;&nbsp;/&nbsp;
       <a class="icon" href="https://github.com/cherubicXN/" target="_blank">Github</a>&nbsp;&nbsp;/&nbsp;
@@ -127,6 +120,18 @@
   
     <table style="border: none;">
     
+    
+      <tr>
+        <!-- <td class="date">2026. 07. 06:</td> -->
+        <td class="date">2026. 07:</td>
+        <td class="announcement">
+          
+            Meet LingBot 2.0! I lead <a href="https://arxiv.org/abs/2607.05247">LingBot-Vision</a> for self-supervised vision pretraining, and take part in <a href="https://arxiv.org/abs/2607.07675">LingBot-Video</a> for video pretraining and <a href="https://arxiv.org/abs/2607.08639">LingBot-VA 2.0</a> for video-action modeling.
+
+
+          
+        </td>
+      </tr>
     
       <tr>
         <!-- <td class="date">2026. 03. 15:</td> -->
@@ -172,17 +177,6 @@
         </td>
       </tr>
     
-      <tr>
-        <!-- <td class="date">2025. 08. 01:</td> -->
-        <td class="date">2025. 08:</td>
-        <td class="announcement">
-          
-            Served as an Area Chair for <a href="https://wacv.thecvf.com/">WACV 2026</a>.
-
-          
-        </td>
-      </tr>
-    
     </table>
   
 
@@ -199,13 +193,15 @@
   </ul> -->
   <br>
   <div id="publications" style="position: relative; top:-60px;"></div>
-<div style="position: relative; top:-20px;">
-<h2><strong>Selected Publications</strong>
-</h2>
+<div class="news" style="position: relative; top:-20px; border: none; font-size: 12pt;">
+<h2>Selected Publications</h2>
 <div id="pubs"></div>
 </div>
 
 <script id="pubs_sel" language="text">
+<div class="paper" name="LingBotVA2"></div>
+<div class="paper" name="LingBotVideo"></div>
+<div class="paper" name="LingBotVision"></div>
 <div class="paper" name="LiPMAP"></div>
 <div class="paper" name="LingBotVA"></div>
 <div class="paper" name="LingBotDepth"></div>
@@ -247,7 +243,7 @@
 <div class="paper" name="ASJ"></div>
 </script>
 <script>showall(0)</script>
-<script type="text/javascript" src="./assets/js/pubrender.js"></script>
+<script type="text/javascript" src="./assets/js/pubrender.js?v=1783746879"></script>
 
   <!-- <div class="post" style="border: none; font-size: 12pt;"> -->
     <!-- <h2><strong>Experiences</strong></h2>
@@ -340,15 +336,15 @@
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
 <!-- Load Common JS -->
-<script src="http://localhost:4000/assets/js/common.js"></script>
+<script src="/assets/js/common.js"></script>
 
 
 
 
 
 <!-- Include custom icon fonts -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
 
 <!-- Google Analytics -->
 <!-- <script>

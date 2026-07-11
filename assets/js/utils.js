@@ -4,6 +4,8 @@
 function adjust_global_scale() {
     // The homepage is placed on a large table, i.e., the first 'Table' tag.
     var table = document.getElementsByTagName('table')[0];
+    // Pages without a table layout need no scaling.
+    if (!table) return;
     // Get width by number of pixels.
     var max_width = parseInt(window.getComputedStyle(table).width, 10);
     var current_width = window.innerWidth;

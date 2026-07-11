@@ -396,6 +396,9 @@ footer a:hover { color: #2698BA; }
 
 .name { font-size: 24pt; font-family: Arial, Helvetica, sans-serif; }
 
+@media only screen and (max-width: 599px) { table.profile-table td { display: block; width: 100% !important; }
+  table.profile-table td img { display: block; max-width: 70%; margin: 10px auto 0; } }
+
 .address { font-family: Arial, Helvetica, sans-serif; }
 
 .bio { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: Arial, Helvetica, sans-serif; }
@@ -409,7 +412,7 @@ footer a:hover { color: #2698BA; }
 .news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; font-family: Arial, Helvetica, sans-serif; }
 .news h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .news table { border-collapse: collapse; width: 100%; }
-.news table .date { width: 8%; }
+.news table .date { width: 8%; white-space: nowrap; padding-right: 12px; }
 .news table .announcement { width: 81%; }
 .news table tr { text-align: left; }
 .news table td { padding: 6px 0; vertical-align: top; border: none; }
