@@ -26,6 +26,8 @@ const coauthors = {
     "Ka Leong Cheng": "https://felixcheng97.github.io/",
     "Hao Ouyang": "https://ken-ouyang.github.io/",
     "Zifan Shi": "https://vivianszf.github.io/",
+    "Yao Yao": "https://yoyo000.github.io/",
+    "Lin-Zhuo Chen": "https://linzhuochen.github.io/",
 }
 const venues = {
     "CVPR": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -176,7 +178,10 @@ function render_pub(
 
     var venue = document.createElement("div");
     venue.className = "journal";
-    venue.innerHTML = "<span class='venue'>" + venue_name + "</span>, " + year;
+    // Short venue keys ("ECCV", "CVPR", ...) resolve to their full names;
+    // anything not in the map passes through unchanged.
+    var venue_full = venues[venue_name] || venue_name;
+    venue.innerHTML = "<span class='venue'>" + venue_full + "</span>, " + year;
     paper_info.appendChild(venue);
 
     var materials = document.createElement("div");
@@ -219,7 +224,7 @@ render_pub("LingBotVA2",
 
 render_pub("LingBotVideo",
     "/assets/spotlights/lingbot-video.png",
-    title="LingBot-Video: Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+    title="Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
     author_list=["Shuailei Ma", "Jiaqi Liao", "Xinyang Wang", "Jingjing Wang", "Chaoran Feng", "Zijing Hu", "Chong Bao", "Zichen Xi", "Yuqi Gan", "Weisen Wang", "Yanhong Zeng", "Qin Zhao", "Zifan Shi", "Wei Wu", "Hao Ouyang", "Qiuyu Wang", "Shangzhan Zhang", "Jiahao Shao", "Yipengjing Sun", "Liangxiao Hu", "Lunke Pan", "Nan Xue", "Kecheng Zheng", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Ka Leong Cheng"],
     venue_name="preprint",
     year=2026,
@@ -235,7 +240,7 @@ render_pub("LingBotVideo",
 
 render_pub("LingBotVision",
     "/assets/spotlights/lingbot-vision.mp4",
-    title="LingBot-Vision: Vision Pretraining for Dense Spatial Perception",
+    title="Vision Pretraining for Dense Spatial Perception",
     author_list=["Zelin Fu", "Bin Tan", "Changjiang Sun", "Shaohui Liu", "Kecheng Zheng", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Nan Xue"],
     venue_name="preprint",
     year=2026,
@@ -247,6 +252,53 @@ render_pub("LingBotVision",
     comments = null,
     first_author=[0, 1],
     corresponding_author=[8]
+);
+
+render_pub("LingBotMap",
+    "/assets/spotlights/lingbot-map.png",
+    title="Geometric Context Transformer for Streaming 3D Reconstruction",
+    author_list=["Lin-Zhuo Chen", "Jian Gao", "Yihang Chen", "Ka Leong Cheng", "Yipengjing Sun", "Liangxiao Hu", "Nan Xue", "Xing Zhu", "Yujun Shen", "Yao Yao", "Yinghao Xu"],
+    venue_name="ECCV",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2604.14141"],
+        ["Project", "https://technology.robbyant.com/lingbot-map"],
+        ["Code", "https://github.com/robbyant/lingbot-map"],
+    ],
+    comments = null,
+    first_author=[0, 1],
+    corresponding_author=[9, 10]
+);
+
+render_pub("LingBotVA",
+    "/assets/spotlights/lingbot-va.png",
+    title="Causal World Modeling for Robot Control",
+    author_list=["Lin Li", "Qihang Zhang", "Yiming Luo", "Shuai Yang", "Ruilin Wang", "Fei Han", "Mingrui Yu", "Zelin Gao", "Nan Xue", "Xing Zhu", "Yujun Shen", "Yinghao Xu"],
+    venue_name="Robotics: Science and Systems (RSS)",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2601.21998"],
+        ["Code", "https://github.com/Robbyant/lingbot-va"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[11]
+);
+
+render_pub("LingBotDepth",
+    "/assets/spotlights/lingbot-depth.mp4",
+    title="Masked Depth Modeling for Spatial Perception",
+    author_list=["Bin Tan", "Changjiang Sun", "Xiage Qin", "Hanat Adai", "Zelin Fu", "Tianxiang Zhou", "Han Zhang", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Nan Xue"],
+    venue_name="ECCV",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2601.17895"],
+        ["Project", "https://technology.robbyant.com/lingbot-depth"],
+        ["Code", "https://github.com/Robbyant/lingbot-depth"],
+    ],
+    comments = null,
+    first_author=[0],
+    corresponding_author=[10]
 );
 
 render_pub("LiPMAP",
@@ -263,37 +315,6 @@ render_pub("LiPMAP",
     comments = null,
     first_author=[0],
     corresponding_author=[4]
-);
-
-render_pub("LingBotVA",
-    "/assets/spotlights/lingbot-va.png",
-    title="Causal World Modeling for Robot Control",
-    author_list=["Lin Li", "Qihang Zhang", "Yiming Luo", "Shuai Yang", "Ruilin Wang", "Fei Han", "Mingrui Yu", "Zelin Gao", "Nan Xue", "Xing Zhu", "Yujun Shen", "Yinghao Xu"],
-    venue_name="preprint",
-    year=2026,
-    material_list=[
-        ["arXiv", "https://arxiv.org/abs/2601.21998"],
-        ["Code", "https://github.com/Robbyant/lingbot-va"],
-    ],
-    comments = null,
-    first_author=[0],
-    corresponding_author=[11]
-);
-
-render_pub("LingBotDepth",
-    "/assets/spotlights/lingbot-depth.mp4",
-    title="LingBot-Depth: Masked Depth Modeling for Spatial Perception",
-    author_list=["Bin Tan", "Changjiang Sun", "Xiage Qin", "Hanat Adai", "Zelin Fu", "Tianxiang Zhou", "Han Zhang", "Yinghao Xu", "Xing Zhu", "Yujun Shen", "Nan Xue"],
-    venue_name="preprint",
-    year=2026,
-    material_list=[
-        ["arXiv", "https://arxiv.org/abs/2601.17895"],
-        ["Project", "https://technology.robbyant.com/lingbot-depth"],
-        ["Code", "https://github.com/Robbyant/lingbot-depth"],
-    ],
-    comments = null,
-    first_author=[0],
-    corresponding_author=[10]
 );
 
 render_pub("UCD",
@@ -569,7 +590,7 @@ render_pub("Sat2Density",
     "/assets/spotlights/sat2density-teaser.gif", 
     title="Sat2Density: Faithful Density Learning from Satellite-Ground Image Pairs",
     author_list=[
-        "Min Qian",
+        "Ming Qian",
         "Jincheng Xiong",
         "Gui-Song Xia",
         "Nan Xue",
