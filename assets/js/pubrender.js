@@ -238,6 +238,22 @@ render_pub("LingBotVideo",
     corresponding_author=[26]
 );
 
+render_pub("LingBotVLA2",
+    "/assets/spotlights/lingbot-vla2.png",
+    title="From Foundation to Application: Improving VLA Models in Practice",
+    author_list=["Wei Wu", "Fangjing Wang", "Fan Lu", "He Sun", "Shi Liu", "Yunnan Wang", "Yibin Yan", "Yong Wang", "Shuailei Ma", "Xinyang Wang", "Yibin Liu", "Shuai Yang", "Tianxiang Zhou", "Kejia Zhang", "Lei Zhou", "Cheng Su", "Nan Xue", "Bin Tan", "Han Zhang", "Youchao Zhang", "Fei Liao", "Xing Zhu", "Yujun Shen", "Kecheng Zheng"],
+    venue_name="preprint",
+    year=2026,
+    material_list=[
+        ["arXiv", "https://arxiv.org/abs/2607.06403"],
+        ["Project", "https://technology.robbyant.com/lingbot-vla-v2"],
+        ["Code", "https://github.com/robbyant/lingbot-vla-v2"],
+    ],
+    comments = null,
+    first_author=[0, 1],
+    corresponding_author=[23]
+);
+
 render_pub("LingBotVision",
     "/assets/spotlights/lingbot-vision.mp4",
     title="Vision Pretraining for Dense Spatial Perception",
@@ -265,7 +281,7 @@ render_pub("LingBotMap",
         ["Project", "https://technology.robbyant.com/lingbot-map"],
         ["Code", "https://github.com/robbyant/lingbot-map"],
     ],
-    comments = null,
+    comments = "Oral Presentation; Best Paper Award Candidate (Top 10)",
     first_author=[0, 1],
     corresponding_author=[9, 10]
 );
